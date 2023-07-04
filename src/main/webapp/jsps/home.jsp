@@ -13,7 +13,7 @@
 <h1 align="center">We are developing and supporting quality Software Solutions to millions of clients globally.
 	           We are raising millionaires in IT automation.
 	We offer Training for DevOps with Linux and Cloud equipping IT Engineers for best performance.
-	Class32 started on April 28, 2023.Solomon Okhifoh is the King of the class.</h1>
+	Class32 started on April 28, 2023.Solomon Okhifoh is the King of the class. King Solomon is in this class</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
