@@ -1,0 +1,37 @@
+node{
+    def mavenHome = tool name: 'maven3.9.2'
+	stage ('1. Get Code'){
+	    git "https://github.com/KingSolomonworld/maven-web-application"
+	}
+/*	
+stage ('2. Build + test'){
+	    sh "${mavenHome}/bin/mvn package"
+	}
+	stage ('3. Code Quality'){
+	    sh "${mavenHome}/bin/mvn sonar:sonar"
+	}
+	stage ('4. Upload artifacts'){
+	 sh "${mavenHome}/bin/mvn deploy"   
+	}
+	stage('5.Deploy to UAT') {
+	    deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://35.161.148.151:8177/')], contextPath: null, war: 'target/*.war'
+	
+	}
+	 stage('6.Approval'){
+    sh "echo 'apps ready for review' "
+    timeout(time:5, unit:'HOURS') {
+    input message: 'Application ready for deployment, Please review and approve'
+      }
+  }
+  	stage('7.Deploy to prod') {
+	    deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://35.161.148.151:8177/')], contextPath: null, war: 'target/*.war'
+	
+	}
+	stage('8.notification'){
+emailext body: '''Build is done!
+Please check.
+
+Thank you.''', recipientProviders: [contributor(), developers(), requestor()], subject: 'Build Status', to: 'sokhifoh@yahoo.com'
+  }
+*/
+}
